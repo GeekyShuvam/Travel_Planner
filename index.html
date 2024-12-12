@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero {
+            background-image: url('https://tse3.mm.bing.net/th?id=OIP.PMqAkCQHnVomdB_pdAJucAHaFj&pid=Api');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .search-section {
+            margin-top: -50px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel Planner</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Plan Your Perfect Trip</h1>
+            <p class="lead">From booking flights to finding affordable hotels and exciting activities.</p>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section container mt-5">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputDestination">Destination</label>
+                    <input type="text" class="form-control" id="inputDestination" placeholder="Enter destination">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCheckIn">Check-In</label>
+                    <input type="date" class="form-control" id="inputCheckIn">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCheckOut">Check-Out</label>
+                    <input type="date" class="form-control" id="inputCheckOut">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputGuests">Guests</label>
+                    <select id="inputGuests" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3 align-self-end">
+                    <button type="submit" class="btn btn-primary btn-block">Search</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="container mt-5">
+        <h2 class="mb-4">Featured Destinations</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.lY0RCK6-IW9aPd5eekbVggHaE7&pid=Api" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nepal</h5>
+                        <p class="card-text">Explore the beauty of Nepal with our exclusive packages.</p>
+                        <a href="#" class="btn btn-primary">View Packages</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.e7M8MAVsYnXT-Cc0hpk8sgHaEu&pid=Api" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Thailand</h5>
+                        <p class="card-text">Discover the attractions of Thailand with our tailored tours.</p>
+                        <a href="#" class="btn btn-primary">View Packages</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.G56hsKmblZ7PfhpiX1gtzgHaFj&pid=Api" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali</h5>
+                        <p class="card-text">Experience the culture of Bali with our guided trips.</p>
+                        <a href="#" class="btn btn-primary">View Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
